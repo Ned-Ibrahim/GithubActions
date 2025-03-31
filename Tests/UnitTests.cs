@@ -35,7 +35,7 @@ namespace GithubActionsLab
     public class Subtraction
     {
         [TestMethod]
-        public void Sub_Valid_Patino_Ibrahim()
+        public void Sub_Valid_Patino()
         {
             Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(4, Program.Subtract("7", "3"));
@@ -43,7 +43,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Sub_Invalid_Patino_Ibrahim()
+        public void Sub_Invalid_Patino()
         {
             Assert.ThrowsException<FormatException>(() => Program.Subtract("1", "a"));
             Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "1"));
@@ -51,7 +51,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Sub_Null_Patino_Ibrahim()
+        public void Sub_Null_Patino()
         {
             Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -63,7 +63,7 @@ namespace GithubActionsLab
     public class Multiplication
     {
         [TestMethod]
-        public void Mul_Valid_Patino_Ibrahim()
+        public void Mul_Valid_Patino()
         {
             Assert.AreEqual(6, Program.Multiply("3", "2"));
             Assert.AreEqual(21, Program.Multiply("7", "3"));
@@ -71,7 +71,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Mul_Invalid_Patino_Ibrahim()
+        public void Mul_Invalid_Patino()
         {
             Assert.ThrowsException<FormatException>(() => Program.Multiply("1", "a"));
             Assert.ThrowsException<FormatException>(() => Program.Multiply("a", "1"));
@@ -79,7 +79,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Mul_Null_Patino_Ibrahim()
+        public void Mul_Null_Patino()
         {
             Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -91,7 +91,7 @@ namespace GithubActionsLab
     public class Division
     {
         [TestMethod]
-        public void Div_Valid_Patino_Ibrahim()
+        public void Div_Valid_Patino()
         {
             Assert.AreEqual(2, Program.Divide("6", "3"));
             Assert.AreEqual(2, Program.Divide("10", "5"));
@@ -99,7 +99,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Div_Invalid_Patino_Ibrahim()
+        public void Div_Invalid_Patino()
         {
             Assert.ThrowsException<FormatException>(() => Program.Divide("1", "a"));
             Assert.ThrowsException<FormatException>(() => Program.Divide("a", "1"));
@@ -107,7 +107,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Div_Null_Patino_Ibrahim()
+        public void Div_Null_Patino()
         {
             Assert.ThrowsException<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -119,7 +119,7 @@ namespace GithubActionsLab
     public class Power
     {
         [TestMethod]
-        public void Power_Valid_Patino_Ibrahim()
+        public void Power_Valid_Patino()
         {
             Assert.AreEqual(8, Program.Power("2", "3"));
             Assert.AreEqual(9, Program.Power("3", "2"));
@@ -127,7 +127,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Power_Invalid_Patino_Ibrahim()
+        public void Power_Invalid_Patino()
         {
             Assert.ThrowsException<FormatException>(() => Program.Power("2", "a"));
             Assert.ThrowsException<FormatException>(() => Program.Power("a", "2"));
@@ -135,7 +135,7 @@ namespace GithubActionsLab
         }
 
         [TestMethod]
-        public void Power_Null_Patino_Ibrahim()
+        public void Power_Null_Patino()
         {
             Assert.ThrowsException<ArgumentNullException>(() => Program.Power("2", null));
             Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, "2"));
