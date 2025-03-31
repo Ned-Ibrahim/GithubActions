@@ -86,6 +86,11 @@
  	// Implement this method following a similar pattern as above
  	public static double Power(string x, string y)
  	{
- 		return 0.0;
+ 		if (x == null) throw new ArgumentNullException(nameof(x));
+    if (y == null) throw new ArgumentNullException(nameof(y));
+
+    double baseVal = double.Parse(x);
+    double exponent = double.Parse(y);
+    return Math.Pow(baseVal, exponent);
  	}
  }
